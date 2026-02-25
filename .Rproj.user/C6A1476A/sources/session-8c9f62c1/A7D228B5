@@ -1,11 +1,11 @@
 {
     "id": "A7D228B5",
-    "path": null,
-    "project_path": null,
+    "path": "C:/Users/MUHAMAD ANIQ/OneDrive/Desktop/GITHUB/kaggle-eda-project/scripts/main_analysis.R",
+    "project_path": "scripts/main_analysis.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "2544354656",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1772014630983.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "46"
     },
     "folds": "",
-    "lastKnownWriteTime": 2240603803752,
-    "encoding": "",
+    "lastKnownWriteTime": 1772018427,
+    "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1772018107909,
+    "last_content_update": 1772018427568,
     "read_only": false,
     "read_only_alternatives": []
 }
