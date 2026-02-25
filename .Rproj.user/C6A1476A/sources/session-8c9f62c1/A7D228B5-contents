@@ -1,0 +1,34 @@
+01_load_data.R
+install.packages("tidyverse")
+library(tidyverse)
+data <- read_csv("C:/Users/MUHAMAD ANIQ/Downloads/archive/fifa_player_performance_market_value.csv")
+head(data)
+glimpse(data)
+summary(data)
+colSums(is.na(data))
+ggplot(data, aes(x = age)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black")
+ggplot(data, aes(x = position)) +
+  geom_bar(fill = "orange") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data, aes(x = overall_rating, y = market_value_million_eur)) +
+  geom_point(color = "red")
+ggplot(data, aes(x = age)) +
+  geom_histogram(bins = 30, fill = "skyblue", color = "black")
+
+ggsave("plots/age_histogram.png")
+ggplot(data, aes(x = position)) +
+  geom_bar(fill = "orange") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("plots/position_bar_chart.png")
+ggplot(data, aes(x = overall_rating, y = market_value_million_eur)) +
+  geom_point(color = "red")
+
+ggsave("plots/rating_vs_market_value.png")
+install.packages("DataExplorer")
+library(DataExplorer)
+
+create_report(data)
+library(DataExplorer)
+create_report(data)
