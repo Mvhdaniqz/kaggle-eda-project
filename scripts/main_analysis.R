@@ -64,3 +64,8 @@ ggsave("plots/rating_vs_market_value.png")
 # 4. Automatic EDA Report
 # -------------------------------
 create_report(data)
+
+install.packages("writexl")
+library(writexl)
+write_xlsx(data, "data/cleaned_fifa_players.xlsx")
+
